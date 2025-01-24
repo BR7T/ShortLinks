@@ -27,13 +27,24 @@ export default function Body(){
                     </div>
 
                     <div className="w-2/3 h-full bg-white shadow-lg rounded-2xl flex items-center justify-center">
-                         ad
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1320242016578102"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1320242016578102"
+     data-ad-slot="1444064326"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                         
                     </div>
                 </article>
 
 
                 <div className="bg-white w-full p-[32px] rounded-xl shadow-lg ">
-                    ad
+                    ad2
                 </div>
             </aside>
 
