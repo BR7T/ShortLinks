@@ -1,3 +1,6 @@
+"use client"
+
+import { useEffect } from "react";
 import { MdOutlineContentCopy } from "react-icons/md";
 
 export default function Body(){
@@ -27,17 +30,7 @@ export default function Body(){
                     </div>
 
                     <div className="w-2/3 h-full bg-white shadow-lg rounded-2xl flex items-center justify-center">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1320242016578102"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1320242016578102"
-     data-ad-slot="1444064326"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+                    
                          
                     </div>
                 </article>
@@ -62,12 +55,35 @@ export default function Body(){
                     </div>
                     <div className="bg-white shadow-lg p-12 rounded-2xl flex items-center justify-center">
 
-                        ad
+                        <Ad/>
                     </div>
 
                 </div>
             </aside>
             
         </main>
+    )
+}
+
+function Ad(){
+    
+    useEffect(() => {
+      const script = document.createElement("script")
+      script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1320242016578102"
+      script.async = true
+      script.crossOrigin = "anonymous"
+        document.head.appendChild(script)
+    }, [])
+    
+    return(
+        <>
+<ins className="adsbygoogle"
+     style={{display:"block"}}
+     data-ad-client="ca-pub-1320242016578102"
+     data-ad-slot="1444064326"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+
+        </>
     )
 }
