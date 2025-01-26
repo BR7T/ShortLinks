@@ -1,8 +1,7 @@
 "use client"
-
-import { useEffect } from "react";
 import { MdOutlineContentCopy } from "react-icons/md";
-import AdBanner from "./Ads/adFirst";
+import FirstAdd from "./Ads/FirstAd";
+
 
 export default function Body(){
     return(
@@ -31,14 +30,20 @@ export default function Body(){
                     </div>
 
                     <div className="w-2/3 h-full bg-white shadow-lg rounded-2xl flex items-center justify-center">
-                        <AdBanner />
+                        
                     </div>
                 </article>
 
+                <FirstAdd />
 
                 <div className="bg-white w-full p-[32px] rounded-xl shadow-lg ">
                     ad2
+                    <FirstAdd />
+
                 </div>
+
+                <FirstAdd />
+
             </aside>
 
 
