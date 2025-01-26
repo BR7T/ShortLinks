@@ -68,17 +68,17 @@ export default function Body(){
 function Ad(){
     useEffect(() => {
         // Inicializar os anúncios
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
+            (window.adsbygoogle = window.adsbygoogle || []).push({});
       }, []);   
     return(
         <>
-            <ins
-            className="adsbygoogle"
-            style={{ display: 'block' }}
-            data-ad-client="ca-pub-XXXXXX"
-            data-ad-slot="XXXXXX"
+            <ins className="adsbygoogle"
+            style={{display:"block"}}
+            data-ad-client="ca-pub-1320242016578102"
+            data-ad-slot="1444064326"
             data-ad-format="auto"
-            />
+            data-full-width-responsive="true"></ins>
+
         </>
     )
 }
