@@ -66,24 +66,19 @@ export default function Body(){
 }
 
 function Ad(){
-    
     useEffect(() => {
-      const script = document.createElement("script")
-      script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1320242016578102"
-      script.async = true
-      script.crossOrigin = "anonymous"
-        document.head.appendChild(script)
-    }, [])
-    
+        // Inicializar os anúncios
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      }, []);   
     return(
         <>
-<ins className="adsbygoogle"
-     style={{display:"block"}}
-     data-ad-client="ca-pub-1320242016578102"
-     data-ad-slot="1444064326"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-
+            <ins
+            className="adsbygoogle"
+            style={{ display: 'block' }}
+            data-ad-client="ca-pub-XXXXXX"
+            data-ad-slot="XXXXXX"
+            data-ad-format="auto"
+            />
         </>
     )
 }
