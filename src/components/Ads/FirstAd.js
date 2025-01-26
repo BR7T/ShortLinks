@@ -12,7 +12,7 @@ export default function FirstAdd(){
     
     return(
         <ins className="adsbygoogle"
-        style={{display:"block" , background:"red"}}
+        style={{display:"block"}}
      data-ad-client="ca-pub-1320242016578102"
      data-ad-slot="1444064326"
      data-ad-format="auto"
