@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import AdsSense from "@/components/Ads/AdSense";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <head>
+        <AdsSense pID={"pub-1320242016578102"} />
       </head> 
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

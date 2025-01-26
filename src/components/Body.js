@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { MdOutlineContentCopy } from "react-icons/md";
+import AdBanner from "./Ads/adFirst";
 
 export default function Body(){
     return(
@@ -30,8 +31,7 @@ export default function Body(){
                     </div>
 
                     <div className="w-2/3 h-full bg-white shadow-lg rounded-2xl flex items-center justify-center">
-                    
-                         
+                        <AdBanner />
                     </div>
                 </article>
 
@@ -55,30 +55,12 @@ export default function Body(){
                     </div>
                     <div className="bg-white shadow-lg p-12 rounded-2xl flex items-center justify-center">
 
-                        <Ad/>
+                        
                     </div>
 
                 </div>
             </aside>
             
         </main>
-    )
-}
-
-function Ad(){
-    useEffect(() => {
-        // Inicializar os anúncios
-            (window.adsbygoogle = window.adsbygoogle || []).push({});
-      }, []);   
-    return(
-        <>
-            <ins className="adsbygoogle"
-            style={{display:"block"}}
-            data-ad-client="ca-pub-1320242016578102"
-            data-ad-slot="1444064326"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
-
-        </>
     )
 }
